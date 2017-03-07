@@ -1,5 +1,4 @@
 const React = require('react');
-const ReactDOM = require('react-dom');
 const expect = require('expect');
 const TestUtils = require('react-addons-test-utils');
 
@@ -23,7 +22,7 @@ describe('Clock', () => {
   });
 
   describe('formatSeconds', () => {
-    it('should form4at seconds', () => {
+    it('should format seconds', () => {
       const clock = TestUtils.renderIntoDocument(<Clock />);
       const seconds = 643;
       const expected = '10:43';
