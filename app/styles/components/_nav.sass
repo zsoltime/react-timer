@@ -1,6 +1,6 @@
 .top-bar
-  background-color: $grey
-  color: $nav-color
+  background-color: $nav-background-color
+  color: $nav-text-color
 
   ul
     background-color: transparent
@@ -10,6 +10,10 @@
       display: inline
       padding: 0
 
-a.active
-  color: $link-color-active
-  font-weight: 700
+
+a
+  color: $link-color
+  
+  &.active
+    color: $link-color-active
+    font-weight: 700
