@@ -15,7 +15,7 @@ describe('Countdown', () => {
       countdown.handleSetCountdown(10);
 
       expect(countdown.state.count).toBe(10);
-      expect(countdown.state.countDownStatus).toBe('started');
+      expect(countdown.state.countdownStatus).toBe('started');
 
       setTimeout(() => {
         expect(countdown.state.count).toBe(9);
