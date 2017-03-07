@@ -9,7 +9,7 @@ module.exports = (config) => {
     preprocessors: {
       'app/tests/**/*.test.jsx': ['webpack', 'sourcemap'],
     },
-    reporters: ['mocha'],
+    reporters: ['mocha', 'notification'],
     client: {
       mocha: {
         timeout: '5000',
