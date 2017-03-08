@@ -15,17 +15,19 @@ const Controls = React.createClass({
     const renderStartStopButton = () => {
       let button;
       if (countdownStatus === 'started') {
-        button = (<button
-          className="pause button secondary"
-          onClick={this.onStatusChange('paused')}
-        >Pause</button>);
-      } else if (countdownStatus === 'paused') {
-        button = (<button
+        return (
+          <button
+            className="pause button secondary"
+            onClick={this.onStatusChange('paused')}
+          >Pause</button>
+        );
+      }
+      return (
+        <button
           className="start button primary"
           onClick={this.onStatusChange('started')}
-        >Start</button>);
-      }
-      return button;
+        >Start</button>
+      );
     };
     return (
       <div className="controls">
